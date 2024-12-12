@@ -1,0 +1,29 @@
+#Real Time Ticket Management System
+
+#Description
+This ticket system is a multithreaded application that designed to vendors to release tickets and customers to buy tickets.Here both customers and vendors
+are able to release and buy at same time.They allowed to do actions until the system gets stopped.
+
+#Features
+1.CLI - Command Line Interface
+    *Here user can configure parameters
+    *User can start and stop the system
+    *User can exit the system
+
+2.Backend
+    *Multi-threaded vendor and customer operations.
+    *Synchronized ticket pool management to ensure thread safety.
+
+3.Frontend
+    *Layout for parameter configuration and system actions.
+
+4.Error handling
+    *Custom exception for invalid inputs.
+
+#System Requirements
+
+1.Java version - JDK 23
+2.Javafx version - javafx sdk 23
+3.Tools - Intellij/Eclipse/Netbeans
+
+
