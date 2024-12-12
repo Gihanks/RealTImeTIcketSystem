@@ -26,4 +26,51 @@ are able to release and buy at same time.They allowed to do actions until the sy
 2.Javafx version - javafx sdk 23
 3.Tools - Intellij/Eclipse/Netbeans
 
+#Setup instruction
 
+1.Clone the repository
+
+*git clone <https://github.com/Gihanks/Real_time_Ticket_System.git>
+*cd Real_time_Ticket_System
+
+2.Build the project
+
+*Compile the code using IDE or command line
+javac -d bin src/**/*.java
+
+3.Run the Application
+
+*Navigate to the bin directory and start the main program:
+java controller.Main
+
+#CLI Commands:
+
+1.Set Configuration:
+        *Prompted to enter totalTickets, ticketReleaseRate, customerRetrievalRate, and maxTicketCapacity.
+2.Start/Stop System:
+        *Start and stop ticketing operations via options in the CLI.
+3.Show Status:
+        *Check the current number of tickets in the pool.
+
+#Technical Details
+1.Backend Logic
+    *Producer-Consumer Pattern:
+        Vendors and customers operate as threads.
+        TicketPool is a shared resource synchronized to prevent race conditions.
+
+    *Custom Exception Handling:
+        Handles invalid inputs and vendor-related issues.
+
+    *Concurrency Mechanisms:
+            Utilizes BlockingQueue and synchronized blocks for thread safety.
+
+#Limitations
+    *Requires manual setup for now; automation scripts can be added.
+
+#Known Issues
+    *High Thread Activity: May occur if ticket rates are misconfigured. Ensure proper values during setup.
+    *Unresponsive GUI: Not functional currently; CLI is the fallback.
+
+Contributors
+    *Gihan Kanishka
+        For queries or issues, please contact [gihan.20223225@gmail.com].
